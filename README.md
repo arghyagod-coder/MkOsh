@@ -4,7 +4,7 @@
     </h3>
     <p align='center'>
     	<strong>
-    		a glorified dotfiles
+    		ORIGINAL WORK BY <a href="https://github.com/manilarome">Manilarome</a> 
     	</strong>
     </p>
 </div>
@@ -36,15 +36,9 @@
 	<img alt='glorious' src='https://raw.githubusercontent.com/manilarome/the-glorious-screenshots/master/glorious.gif'/>
 	<br/>
 	<b>
-		Welcome to the glorious dotfiles!
+		Welcome to the ultimate awesomewm config!
 	</b>
 </p>
-
-<p align='center'>
-	<br/>
-	This is a collection/stash of my linux configurations also known as dotfiles. I don't know why did I wasted my time writing these, especially my AwesomeWM setups. Or maybe it's because... I did it for me. I liked it. I was good at it. And I was really -- I was alive. ;) So no wasted time after all. You're probably here because of my awesome dotfiles. So yeah, steal what you want. Don't forget to check my <a href='https://github.com/manilarome/'>other projects!</a>
-</p>
-
 
 ## [Wiki here](https://github.com/manilarome/the-glorious-dotfiles/wiki)
 
@@ -59,7 +53,7 @@ If you're too lazy to read the wiki, here's some of the details you need to know
 - [`archlinux`](https://www.archlinux.org/download/) as distribution
 - [`fish`](https://fishshell.com/) as shell
 - [`awesomewm`](https://awesomewm.org) as window manager
-- [`kitty`](https://github.com/kovidgoyal/kitty) as terminal emulator
+- [`alacritty`](https://github.com/alacritty/alacritty) as terminal emulator
 - [`picom-git`](https://github.com/yshui/picom) as compositor
 - [`rofi`](https://github.com/davatorium/rofi) as application launcher
 - [`inter-font`](https://github.com/rsms/inter/) as the setup font
@@ -80,28 +74,27 @@ If you're too lazy to read the wiki, here's some of the details you need to know
 2. Clone this repository.
 
 	```bash
-	$ git clone --depth 1 https://github.com/manilarome/the-glorious-dotfiles/
+	$ git clone https://github.com/arghyagod-coder/awesomewm-config
 	```
 
 3. Make sure to create a backup if you have a current AwesomeWM configuration.
-4. Copy the `the-glorious-dotfiles/config/awesome/SETUPNAME` folder to your `"${HOME}"/.config/`. I'll just assume that you don't have an `awesome` folder in your `~/.config/`:
+4. Copy the folder to your `"${HOME}"/.config/`. I'll just assume that you don't have an `awesome` folder in your `~/.config/`:
 
 	```bash
 	# Use the Floppy setup
-	$ cp -r the-glorious-dotfiles/config/awesome/floppy $HOME/.config/awesome
-
-	# Use the GNawesOME setup
-	$ cp -r the-glorious-dotfiles/config/awesome/gnawesome $HOME/.config/awesome
-
-	# Use the Linear setup
-	$ cp -r the-glorious-dotfiles/config/awesome/linear $HOME/.config/awesome
-
-	# Use the Surreal setup
-	$ cp -r the-glorious-dotfiles/config/awesome/surreal $HOME/.config/awesome
+	$ cp -r awesomewm-config/* $HOME/.config/awesome
 	```
 
 4. Change the global configuration in `$HOME/.config/awesome/configuration/config.lua`.
-5. Reload AwesomeWM by pressing <kbd>Super + Shift + r</kbd>.
+5. Set the rofi config:
+
+```bash
+mkdir -p ~/.config/rofi
+cp $HOME/.config/awesome/configuration/rofi/appmenu/rofi.rasi  ~/.config/rofi/config.rasi
+sed -i '/@import/c\@import "'$HOME'/.config/awesome/configuration/rofi/appmenu/rofi.rasi"' ~/.config/rofi/config.rasi
+```
+
+6. Reload AwesomeWM.
 
 ## TODOs
 
@@ -144,50 +137,13 @@ I don't really rice just to make it beautiful, I want it to be also functional s
 
 ### Gallery
 
-Some of these are outdated, so it is better if you try them yourself. 
-
-<p align='center'>
-	<img alt='glorious' src='https://raw.githubusercontent.com/manilarome/the-glorious-screenshots/master/floppy.webp'/>
-	<br/>
-	<b>
-		Floppy
-	</b>
-	<br>
-	Floppy was meant to be a clone of the infamous <a href='https://www.reddit.com/r/unixporn/comments/apktsx/flurry_i_know_you_like_tiling_managers_and_i_want/'>Flurry Desktop</a>. I named it Floppy because I thought it would flop when I first <a href='https://www.reddit.com/r/unixporn/comments/de0m3v/awesome_floppy/'>posted it on r/unixporn</a>. This is my favorite.
-	<br>
-</p>
-
-<p align='center'>
-	<img alt='glorious' src='https://raw.githubusercontent.com/manilarome/the-glorious-screenshots/master/gnawesome.webp'/>
-	<br/>
-	<b>
-		GNawesOME
-	</b>
-	<br>
-	Yes, GNawesOME is a weird name. GNawesOME was meant to be a GNOME clone. Instead, it became a hybrid of macOS, iOS, GNOME, and Deepin. I regret nothing.
-	<br>
-</p>
-
-<p align='center'>
-	<img alt='glorious' src='https://raw.githubusercontent.com/manilarome/the-glorious-screenshots/master/linear.webp'/>
-	<br/>
-	<b>
-		Linear
-	</b>
-	<br>
-	A setup full of borders and lines. Awesome right?
-	<br>
-</p>
-
 <p align='center'>
 	<img alt='glorious' src='https://raw.githubusercontent.com/manilarome/the-glorious-screenshots/master/surreal.webp'/>
 	<br/>
 	<b>
 		Surreal
 	</b>
-	<br>
-	Yes, I copied the macOS Big Sur design. Many linux elitists will hate it but I don't care. Cry me a river.
-	<br>
+	<>br>
 </p>
 
 #### More screenshots

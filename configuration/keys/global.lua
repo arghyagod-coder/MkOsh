@@ -522,6 +522,22 @@ for i = 1, 9 do
 			end,
 			descr_toggle
 		),
+		awful.key(
+    {modkey, 'Shift'},
+    's',
+    function()
+      awful.spawn('shutdown now')
+    end,
+    {description = 'Shutdown Computer', group = 'awesome'}
+  ),
+  awful.key(
+    {modkey, 'Shift'},
+    'r',
+    function()
+      awful.spawn('reboot')
+    end,
+    {description = 'Reboot Computer', group = 'awesome'}
+  ),
 		-- Move client to tag.
 		awful.key(
 			{modkey, 'Shift'},

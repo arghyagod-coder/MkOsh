@@ -53,7 +53,10 @@ If you're too lazy to read the wiki, here's some of the details you need to know
 - [`archlinux`](https://www.archlinux.org/download/) as distribution
 - [`fish`](https://fishshell.com/) as shell
 - [`awesomewm`](https://awesomewm.org) as window manager
-- [`alacritty`](https://github.com/alacritty/alacritty) as terminal emulator
+- [`kitty`](https://github.com/alacritty/alacritty) as terminal emulator
+- [`brave`](https://github.com/brave/brave-browser) as browser
+- [`nautilus`](https://github.com/GNOME/nautilus) as file manager
+- ['VS Code'](https://github.com/microsoft/vscode) as text editor
 - [`picom-git`](https://github.com/yshui/picom) as compositor
 - [`rofi`](https://github.com/davatorium/rofi) as application launcher
 - [`inter-font`](https://github.com/rsms/inter/) as the setup font
@@ -95,7 +98,6 @@ sed -i '/@import/c\@import "'$HOME'/.config/awesome/configuration/rofi/appmenu/r
 ```
 
 6. Reload AwesomeWM.
-
 ## TODOs
 
 My TODOs or roadmap for my awesomewm setups.

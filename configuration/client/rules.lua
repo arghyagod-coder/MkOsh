@@ -151,6 +151,7 @@ ruled.client.connect_signal(
 			rule_any = {
 				class = {
 					'firefox',
+					'brave',
 					'Tor Browser',
 					'discord',
 					'Chromium',

@@ -196,7 +196,7 @@ client.connect_signal(
 			if c.class == 'kitty' then
 				create_vertical_bar(c, 'left', '#00000099', beautiful.titlebar_size)
 
-			elseif c.class == 'firefox' then
+			elseif c.class == 'brave' then
 				create_vertical_bar(c, 'left', beautiful.background, beautiful.titlebar_size)
 
 			elseif c.class == 'XTerm' or c.class == 'UXTerm' then
@@ -252,7 +252,7 @@ client.connect_signal(
 				create_vertical_bar_dialog(c, 'left',
 					beautiful.gtk.get_theme_variables().bg_color, beautiful.titlebar_size)
 
-			elseif c.class == 'firefox' then
+			elseif c.class == 'brave' then
 				create_vertical_bar_dialog(c, 'left',
 					beautiful.gtk.get_theme_variables().bg_color, beautiful.titlebar_size)
 

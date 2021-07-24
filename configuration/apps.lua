@@ -6,7 +6,7 @@ return {
 	-- The default applications that we will use in keybindings and widgets
 	default = {
 		-- Default terminal emulator
-		terminal = 'alacritty',
+		terminal = 'kitty',
 		-- Default web browser
 		web_browser = 'brave',
 		-- Default text editor
@@ -24,7 +24,7 @@ return {
 		-- Default IDE
 		development = 'code',
 		-- Default network manager
-		network_manager = 'alacritty iwctl',
+		network_manager = 'wicd-client -n',
 		-- Default bluetooth manager
 		bluetooth_manager = 'blueberry-tray',
 		-- Default power manager
@@ -34,7 +34,7 @@ return {
 		-- Default locker
 		lock = 'awesome-client "awesome.emit_signal(\'module::lockscreen_show\')"',
 		-- Default quake terminal
-		quake = 'alacritty --name QuakeTerminal',
+		quake = 'kitty --name QuakeTerminal',
 		-- Default rofi global menu
 		rofi_global = 'rofi -dpi ' .. screen.primary.dpi .. 
 							' -show "Global Search" -modi "Global Search":' .. config_dir .. 

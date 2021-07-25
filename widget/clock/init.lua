@@ -86,7 +86,7 @@ local create_clock = function(s)
 			local date_str = 'Today is the ' ..
 			'<b>' .. day .. ordinal .. 
 			' of ' .. month .. '</b>.\n' ..
-			'And it\'s fucking ' .. os.date('%A')
+			'And it\'s a boombastic ' .. os.date('%A')
 
 			return date_str
 		end,

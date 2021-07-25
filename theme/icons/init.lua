@@ -15,7 +15,7 @@ return {
 	sandbox 			= dir .. 'tag-list/' .. 'sandbox.svg',
 	terminal 			= dir .. 'tag-list/' .. 'terminal.svg',
 	graphics 			= dir .. 'tag-list/' .. 'graphics.svg',
-	menu 				= dir .. 'tag-list/' .. 'menu.svg',
+	menu 				= dir .. 'tag-list/' .. 'menu2.svg',
 	close_small 		= dir .. 'tag-list/' .. 'close-small.svg',
 
 	-- Others/System UI

@@ -397,6 +397,14 @@ local global_keys = awful.util.table.join(
 	),
 	awful.key(
 		{modkey}, 
+		'c',
+		function()
+			awful.spawn(apps.default.text_editor)
+		end,
+		{description = 'open VS Code', group = 'launcher'}
+	),
+	awful.key(
+		{modkey}, 
 		'b',
 		function()
 			awful.spawn(apps.default.web_browser)
@@ -457,7 +465,7 @@ local global_keys = awful.util.table.join(
 	),
 	awful.key(
 		{modkey},
-		'c',
+		'=',
 		function()
 			local focused = awful.screen.focused()
 			if focused.info_center and focused.info_center.visible then
@@ -522,22 +530,6 @@ for i = 1, 9 do
 			end,
 			descr_toggle
 		),
-		awful.key(
-    {modkey, 'Shift'},
-    's',
-    function()
-      awful.spawn('shutdown now')
-    end,
-    {description = 'Shutdown Computer', group = 'awesome'}
-  ),
-  awful.key(
-    {modkey, 'Shift'},
-    'r',
-    function()
-      awful.spawn('reboot')
-    end,
-    {description = 'Reboot Computer', group = 'awesome'}
-  ),
 		-- Move client to tag.
 		awful.key(
 			{modkey, 'Shift'},

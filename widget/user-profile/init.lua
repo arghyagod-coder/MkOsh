@@ -12,7 +12,7 @@ local user_icon_dir = '/var/lib/AccountsService/icons/'
 
 title_table = {
 	'Hey, I have a message for you',
-	'Listen here you little shit!',
+	'Listen here you little noob!',
 	'Le\' me tell you a secret',
 	'I never lie',
 	'Message received from your boss'
@@ -20,7 +20,7 @@ title_table = {
 
 message_table = {
 	'Let me rate your face! Oops... It looks like I can\'t compute negative numbers. You\'re ugly af, sorry',
-	'Lookin\' good today, now fuck off!',
+	'Lookin\' good today, now get off!',
 	'The last thing I want to do is hurt you. But it’s still on the list.',
 	'If I agreed with you we’d both be wrong.',
 	'I intend to live forever. So far, so good.',

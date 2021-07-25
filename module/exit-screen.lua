@@ -18,7 +18,7 @@ local msg_table = {
 	'Yamete, onii-chan~. UwU',
 	'Okay...bye, fry guy!',
 	'Peace out!',
-	'Peace out, bitch!',
+	'Peace out, drunkard!',
 	'Gotta get going.',
 	'Out to the door, dinosaur.',
 	'Don\'t forget to come back!',

@@ -6,21 +6,9 @@ local apps = require('configuration.apps')
 
 local tags = {
 	{
-		type = 'terminal',
-		icon = icons.terminal,
-		default_app = apps.default.terminal,
-		gap = beautiful.useless_gap
-	},
-	{
 		type = 'internet',
 		icon = icons.web_browser,
 		default_app = apps.default.web_browser,
-		gap = beautiful.useless_gap
-	},
-	{
-		type = 'code',
-		icon = icons.text_editor,
-		default_app = apps.default.text_editor,
 		gap = beautiful.useless_gap
 	},
 	{
@@ -31,12 +19,16 @@ local tags = {
 		layout = awful.layout.suit.tile
 	},
 	{
-		type = 'multimedia',
-		icon = icons.multimedia,
-		default_app = apps.default.multimedia,
-		gap = beautiful.useless_gap,
-		layout = awful.layout.suit.floating,
-		gap = 0
+		type = 'terminal',
+		icon = icons.terminal,
+		default_app = apps.default.terminal,
+		gap = beautiful.useless_gap
+	},
+	{
+		type = 'code',
+		icon = icons.text_editor,
+		default_app = apps.default.text_editor,
+		gap = beautiful.useless_gap
 	},
 	{
 		type = 'games',
@@ -56,6 +48,14 @@ local tags = {
 		icon = icons.sandbox,
 		default_app = apps.default.sandbox,
 		layout = awful.layout.suit.max,
+		gap = 0
+	},
+	{
+		type = 'multimedia',
+		icon = icons.multimedia,
+		default_app = apps.default.multimedia,
+		gap = beautiful.useless_gap,
+		layout = awful.layout.suit.floating,
 		gap = 0
 	},
 	{

@@ -153,7 +153,7 @@ local update_artist = function()
 							artist_text:set_text('unknown artist')
 
 						else
-							artist_text:set_text('or play some porn?')
+							artist_text:set_text('or play some tutorials?')
 						end
 						artist_widget:emit_signal('widget::redraw_needed')
 						artist_widget:emit_signal('widget::layout_changed')

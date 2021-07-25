@@ -36,8 +36,8 @@ local bottom_panel = function(s)
 		widget = wibox.widget.separator
 	}
 
-	local bottom_panel_height = dpi(56)
-	local bottom_panel_margins = dpi(5)
+	local bottom_panel_height = dpi(75)
+	local bottom_panel_margins = dpi(2)
 
 	local panel = awful.popup {
 		widget = {

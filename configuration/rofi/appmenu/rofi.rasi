@@ -12,7 +12,7 @@ configuration {
 }
 
 * {
-	transparent: #00000000;
+	transparent: #FFFFFF00;
 	foreground: #F2F2F2EE;
 	background-selected: #F2F2F245;
 	background-active: #F2F2F230;

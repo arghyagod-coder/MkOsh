@@ -33,14 +33,14 @@ theme.system_white_dark = '#E5E5E5'
 theme.system_white_light = '#F8F8F2'
 
 -- Accent color
-theme.accent = theme.system_blue_dark
+theme.accent = theme.system_white_light
 
 -- Background color
-theme.background = '#00000066'
+theme.background = '#f2f2f255'
 theme.background_light = '#f2f2f266'
 
 -- Transparent
-theme.transparent = '#00000000'
+theme.transparent = '#FFFFFF00'
 
 -- Awesome icon
 theme.awesome_icon = theme.icons .. 'awesome.svg'

@@ -20,8 +20,8 @@ local bottom_panel = function(s)
 				end,
 				widget = wibox.container.background
 			},
-			top = dpi(10),
-			bottom = dpi(10),
+			top = dpi(5),
+			bottom = dpi(5),
 			widget = wibox.container.margin
 		}
 	end
@@ -36,8 +36,8 @@ local bottom_panel = function(s)
 		widget = wibox.widget.separator
 	}
 
-	local bottom_panel_height = dpi(75)
-	local bottom_panel_margins = dpi(2)
+	local bottom_panel_height = dpi(80)
+	local bottom_panel_margins = dpi(1)
 
 	local panel = awful.popup {
 		widget = {

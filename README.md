@@ -83,7 +83,7 @@ yay -S rofi awesome-git picom-git inter-font light-git mpd mcd alsa-utils pulsea
 2. Clone this repository.
 
 	```bash
-	$ git clone https://github.com/arghyagod-coder/MkOsh
+	$ git clone https://github.com/XApple-Team/MkOsh
 	```
 
 3. Make sure to create a backup if you have a current AwesomeWM configuration.

@@ -26,14 +26,14 @@ local awesome_overrides = function(theme)
 	theme.icons = theme_dir .. '/icons/'
 
 	-- Default wallpaper path
-	theme.wallpaper = theme.dir .. '/wallpapers/morning-wallpaper.jpg'
+	theme.wallpaper = theme.dir .. '/wallpapers/morn.jpg'
 
 	-- Default font
 	theme.font = 'Inter Regular 10'
 
 	-- Foreground
 	theme.fg_normal = '#ffffffde'
-	theme.fg_focus = '#e4e4e4'
+	theme.fg_focus = '#e4e4e400'
 	theme.fg_urgent = '#CC9393'
 
 	theme.bg_normal = theme.background
@@ -138,7 +138,7 @@ local awesome_overrides = function(theme)
 	-- Decorations
 	theme.useless_gap = dpi(4)
 	theme.client_shape_rounded = function(cr, width, height)
-		gears.shape.rounded_rect(cr, width, height, dpi(12))
+		gears.shape.rounded_rect(cr, width, height, dpi(15))
 	end
 
 	-- Menu

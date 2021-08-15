@@ -90,7 +90,6 @@ yay -S rofi awesome-git picom-git inter-font light-git mpd mcd alsa-utils pulsea
 4. Copy the folder to your `"${HOME}"/.config/`. I'll just assume that you don't have an `awesome` folder in your `~/.config/`:
 
 	```bash
-	# Use the Floppy setup
 	$ cp -r MkOsh/* $HOME/.config/awesome
 	```
 

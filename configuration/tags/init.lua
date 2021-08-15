@@ -10,25 +10,28 @@ local tags = {
 		icon = icons.web_browser,
 		default_app = apps.default.web_browser,
 		gap = beautiful.useless_gap
+		layout = awful.layout.suit.floating
 	},
 	{
 		type = 'files',
 		icon = icons.file_manager,
 		default_app = apps.default.file_manager,
 		gap = beautiful.useless_gap,
-		layout = awful.layout.suit.tile
+		layout = awful.layout.suit.floating
 	},
 	{
 		type = 'terminal',
 		icon = icons.terminal,
 		default_app = apps.default.terminal,
 		gap = beautiful.useless_gap
+		layout = awful.layout.suit.floating
 	},
 	{
 		type = 'code',
 		icon = icons.text_editor,
 		default_app = apps.default.text_editor,
 		gap = beautiful.useless_gap
+		layout = awful.layout.suit.floating
 	},
 	{
 		type = 'games',
@@ -42,12 +45,13 @@ local tags = {
 		icon = icons.graphics,
 		default_app = apps.default.graphics,
 		gap = beautiful.useless_gap
+		layout = awful.layout.suit.floating
 	},
 	{
 		type = 'sandbox',
 		icon = icons.sandbox,
 		default_app = apps.default.sandbox,
-		layout = awful.layout.suit.max,
+		layout = awful.layout.suit.floating
 		gap = 0
 	},
 	{
@@ -78,9 +82,9 @@ tag.connect_signal(
 	'request::default_layouts',
 	function()
 	    awful.layout.append_default_layouts({
+			awful.layout.suit.floating,
 			awful.layout.suit.spiral.dwindle,
 			awful.layout.suit.tile,
-			awful.layout.suit.floating,
 			awful.layout.suit.max
 	    })
 	end

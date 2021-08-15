@@ -8,9 +8,9 @@ return {
 		-- Default terminal emulator
 		terminal = 'kitty',
 		-- Default web browser
-		web_browser = 'brave',
+		web_browser = 'firefox',
 		-- Default text editor
-		text_editor = 'code',
+		text_editor = 'gedit',
 		-- Default file manager
 		file_manager = 'nautilus',
 		-- Default media player
